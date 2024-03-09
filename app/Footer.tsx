@@ -22,12 +22,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer
-      className="flex flex-col sm:flex-row justify-around p-5 bg-gray-700 text-gray-400"
-      style={{ backgroundColor: "#3D4348" }}
-    >
+    <footer className="flex flex-col sm:flex-row justify-around p-5 bg-slate-gray text-gray-400 mt-3 ">
       <div className="flex flex-col max-w-xs mb-4 sm:mb-0">
-        <h3 className="text-yellow-400 font-semibold text-lg mb-2">About Us</h3>
+        <h3 className="text-yellow-400 font-semibold text-lg">About Us</h3>
         <p className="text-sm">
           We love what we do and how we do! We put our care, quality and passion
           into creating our extra virgin olive oil. Our passion pushes us to
@@ -38,9 +35,7 @@ const Footer = () => {
         <p className="mt-3 pt-3 text-sm">2024&copy; All Right Reserved</p>
       </div>
       <div className="flex flex-col mb-4 sm:mb-0">
-        <h3 className="text-yellow-400 font-semibold text-lg mb-2">
-          Information
-        </h3>
+        <h3 className="text-yellow-400 font-semibold text-lg">Information</h3>
         <Link href="/" className="text-sm hover:text-yellow-400">
           Home
         </Link>

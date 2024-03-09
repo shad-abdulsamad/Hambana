@@ -15,12 +15,12 @@ const Sidebar = () => {
     <>
       {isOpen ? (
         <RxCross1
-          className="fixed cursor-pointer text-white text-3xl m-4 top-0 left-0 z-50"
+          className="fixed cursor-pointer text-white text-3xl m-4 top-0 left-0 z-50 hover:text-yellow-400"
           onClick={toggleSidebar}
         />
       ) : (
         <FaBars
-          className="fixed cursor-pointer text-white text-3xl m-4 top-0 left-0 z-50"
+          className="fixed cursor-pointer text-white text-3xl m-5 top-0 left-0 z-50 hover:text-yellow-400"
           onClick={toggleSidebar}
         />
       )}
