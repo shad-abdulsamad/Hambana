@@ -74,7 +74,7 @@ const Form = () => {
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <label htmlFor="formCheckBox" className="p-1">
+            <label htmlFor="formCheckBox">
               I agree that my submitted data is being collected and saved
             </label>
           </div>
