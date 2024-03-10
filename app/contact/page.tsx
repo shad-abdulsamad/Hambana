@@ -7,7 +7,7 @@ import olive from "@/public/olive-oil.jpg";
 const Contact = () => {
   return (
     <>
-      <BackgroundImage imageUrl={olive.src} slogan="Contact" path="Contact" />
+      <BackgroundImage imageUrl={olive.src} title="Contact" />
       <div className="flex flex-col items-center">
         <Form />
         <Map />

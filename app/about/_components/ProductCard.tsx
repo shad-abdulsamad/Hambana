@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCardContainer from "./ProductCardContainer";
 import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface Props {
   image: string;
@@ -15,13 +16,15 @@ const ProductCard = ({ image, title, body }: Props) => {
         <Image src={image} maxWidth="100%" height="auto" />
         <CardBody>
           <Heading
-            className="slate-gray font-serif font-semibold text-2xl"
+            className="slate-gray font-serif font-semibold text-xl mt-3 p-2 transition-text"
             textAlign="center"
             mb={2}
           >
-            {title}
+            <Link href="#">{title}</Link>
           </Heading>
-          <Text textAlign="center">{body}</Text>
+          <Text className="text-sm concrete-gray" textAlign="center">
+            {body}
+          </Text>
         </CardBody>
       </Card>
     </ProductCardContainer>

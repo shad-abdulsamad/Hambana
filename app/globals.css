@@ -34,7 +34,12 @@
     }
 
     .text-wheat{
-        color: wheat;
+        color: #E9E4D0;
+    }
+
+    .transition-text:hover{
+        color: #D9B000;
+        transition: all ease-in-out 0.5s;
     }
   
 }
