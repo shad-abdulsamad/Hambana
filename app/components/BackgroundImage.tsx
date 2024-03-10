@@ -1,21 +1,56 @@
+import Link from "next/link";
 import React from "react";
 
 interface Props {
   imageUrl: string;
   slogan: string;
+  path: string;
 }
 
-const BackgroundImage = ({ imageUrl, slogan }: Props) => {
+/* const BackgroundImage = ({ imageUrl, slogan, path }: Props) => {
   return (
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center"
+      className="min-h-screen flex items-center justify-center bg-cover bg-center relative"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-white">{slogan}</h1>
-        <button className="mt-4 px-6 py-3 bg-yellow-400 concrete-gray font-semibold shadow-md hover:bg-yellow-600">
-          Products
-        </button>
+      <div className="absolute inset-0 bg-slate-900 opacity-60"></div>
+
+      <div className="relative text-center">
+        <h1 className="text-6xl font-bold font-serif text-white">{slogan}</h1>
+        <h3 className="text-wheat font-serif text-2xl mt-3 p-3">
+          <Link className="hover:text-yellow-400 transition-all" href="/">
+            Home
+          </Link>
+          {" / "}
+          {path}
+        </h3>
+      </div>
+    </div>
+  );
+};
+
+export default BackgroundImage; */
+
+const BackgroundImage = ({ imageUrl, slogan, path }: Props) => {
+  return (
+    <div
+      className="hidden lg:flex min-h-screen items-center justify-center bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
+      <div className="absolute inset-0 bg-slate-900 opacity-60"></div>
+
+      <div className="relative text-center">
+        <h1 className="text-6xl font-bold font-serif text-white">{slogan}</h1>
+        <h3 className="text-wheat font-serif text-2xl mt-3 p-3">
+          <Link
+            className=" text-white hover:text-yellow-400 transition-all"
+            href="/"
+          >
+            Home
+          </Link>
+          {" / "}
+          {path}
+        </h3>
       </div>
     </div>
   );

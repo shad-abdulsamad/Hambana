@@ -2,13 +2,17 @@
 import React from "react";
 import Map from "./_components/Map";
 import Form from "./_components/Form";
-
+import BackgroundImage from "../components/BackgroundImage";
+import olive from "@/public/olive-oil.jpg";
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center">
-      <Form />
-      <Map />
-    </div>
+    <>
+      <BackgroundImage imageUrl={olive.src} slogan="Contact" path="Contact" />
+      <div className="flex flex-col items-center">
+        <Form />
+        <Map />
+      </div>
+    </>
   );
 };
 

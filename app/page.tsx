@@ -1,13 +1,13 @@
-import BackgroundImage from "./components/BackgroundImage";
 import product from "@/public/product_1.png";
+import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage";
 export default function Home() {
   return (
     <>
-      <BackgroundImage
+      <LandingPageBackgroundImage
         imageUrl={product.src}
         slogan="This is the slogan of the company"
+        buttonText="Products"
       />
-      <h3></h3>
     </>
   );
 }

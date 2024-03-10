@@ -26,7 +26,7 @@ const Form = () => {
 
   return (
     <>
-      <p className="text-center text-3xl font-serif font-semibold">
+      <p className="text-center text-3xl font-serif font-semibold mt-5">
         Visit Us or Leave Feedback
       </p>
       <div className="flex flex-wrap justify-center mt-3">
