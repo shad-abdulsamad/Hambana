@@ -41,5 +41,9 @@
         color: #D9B000;
         transition: all ease-in-out 0.5s;
     }
+
+    .custom-bullet::marker{
+        color: #D9B000;
+    }
   
 }

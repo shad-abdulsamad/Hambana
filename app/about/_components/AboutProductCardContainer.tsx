@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode;
 }
 
-const ProductCardContainer = ({ children }: Props) => {
+const AboutProductCardContainer = ({ children }: Props) => {
   return (
     <Box overflow="hidden" width="300px">
       {children}
@@ -13,4 +13,4 @@ const ProductCardContainer = ({ children }: Props) => {
   );
 };
 
-export default ProductCardContainer;
+export default AboutProductCardContainer;

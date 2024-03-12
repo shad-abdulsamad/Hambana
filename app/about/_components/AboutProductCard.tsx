@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCardContainer from "./ProductCardContainer";
+import ProductCardContainer from "./AboutProductCardContainer";
 import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
 

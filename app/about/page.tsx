@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "./_components/ProductCard";
+import ProductCard from "./_components/AboutProductCard";
 import BackgroundImage from "../components/BackgroundImage";
 import oliveOil from "@/public/virgin-oil.png";
 import vinegar from "@/public/vinegar.png";
