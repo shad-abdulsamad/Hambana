@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import useProducts from "../useProducts";
+import {
+  LiaLongArrowAltLeftSolid,
+  LiaLongArrowAltRightSolid,
+} from "react-icons/lia";
 
 const ProductGrid = () => {
   const products = useProducts();
@@ -13,6 +17,14 @@ const ProductGrid = () => {
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+  };
+
+  const handleNextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  const handlePrevPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
   const startIndex = (currentPage - 1) * productsPerPage;
@@ -33,22 +45,35 @@ const ProductGrid = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
-        <div>
-          <ul className="pagination">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <li
-                key={page}
-                className={`pagination-item cursor-pointer ${
-                  page === currentPage ? "active" : ""
-                }`}
-                onClick={() => handlePageChange(page)}
-              >
-                {page}
-              </li>
-            ))}
-          </ul>
-        </div>
+
+      <div className="flex justify-center mt-4 space-x-6 slate-gray text-xs">
+        {currentPage !== 1 && (
+          <span
+            className="pagination-item cursor-pointer hover:bg-yellow-400 rounded-full"
+            onClick={handlePrevPage}
+          >
+            <LiaLongArrowAltLeftSolid className="text-lg" />
+          </span>
+        )}
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+          <span
+            key={page}
+            className={`pagination-item cursor-pointer hover:bg-yellow-400 rounded-full ${
+              page === currentPage ? "active" : ""
+            }`}
+            onClick={() => handlePageChange(page)}
+          >
+            {page}
+          </span>
+        ))}
+        {currentPage !== totalPages && (
+          <span
+            className="pagination-item cursor-pointer text-lg hover:bg-yellow-400 rounded-full"
+            onClick={handleNextPage}
+          >
+            <LiaLongArrowAltRightSolid />
+          </span>
+        )}
       </div>
     </div>
   );

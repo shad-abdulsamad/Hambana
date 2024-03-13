@@ -45,5 +45,19 @@
     .custom-bullet::marker{
         color: #D9B000;
     }
+
+   .pagination-item {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 2rem;
+       width: 2rem;
+       border-radius: 50%;
+      
+   }
+
+   .active{
+    background-color:#FACC15;
+   }
   
 }
