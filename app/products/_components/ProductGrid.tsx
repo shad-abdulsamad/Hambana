@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "@/app/components/ProductCard";
 import useProducts from "../useProducts";
 import {
   LiaLongArrowAltLeftSolid,
