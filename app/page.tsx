@@ -7,6 +7,8 @@ import vinegar from "@/public/vinegar.png";
 import oliveOil from "@/public/virgin-oil.png";
 import oliveBottle from "@/public/olive-bottle.jpg";
 import ProductCard from "./components/ProductCard";
+import Link from "next/link";
+import Slider from "./components/Slider";
 
 export default function Home() {
   return (
@@ -38,6 +40,9 @@ export default function Home() {
           />
         </div>
       </section>
+      <section>
+        <Slider />
+      </section>
       <section className="flex flex-col items-center">
         <h2 className="text-2xl text-center sm:text-3xl font-serif text-gray-800 mb-4">
           Newest Products
@@ -65,7 +70,7 @@ export default function Home() {
           />
         </div>
         <button className="mt-4 px-6 py-3 bg-yellow-400 text-gray-900 font-light shadow-md hover:bg-yellow-600">
-          View All
+          <Link href="/products">View All</Link>
         </button>
       </section>
     </>
