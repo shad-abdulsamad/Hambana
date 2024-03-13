@@ -12,7 +12,7 @@ const ProductCard = ({ image, title, price }: Props) => {
     <div className="product-card">
       <img src={image} alt={title} className="product-image" />
       <h2 className="product-title">{title}</h2>
-      <p className="product-price">{price}</p>
+      <p className="product-price">$ {price}</p>
     </div>
   );
 };
