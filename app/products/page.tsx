@@ -8,7 +8,7 @@ const ProductsPage = () => {
     <>
       <BackgroundImage imageUrl={olive.src} title="Products" />
       <div className="grid grid-cols-1 lg:grid-cols-[200px,1fr]">
-        <div className="lg:col-span-1">
+        <div className="ml-5 mt-3 lg:col-span-1">
           <Categories />
         </div>
         <div className="flex flex-wrap justify-center gap-4 lg:col-span-1">

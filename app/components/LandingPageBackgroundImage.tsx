@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -18,7 +19,7 @@ const BackgroundImage = ({ imageUrl, slogan, buttonText }: Props) => {
         <h1 className="text-4xl font-bold text-white">{slogan}</h1>
 
         <button className="mt-4 px-6 py-3 bg-yellow-400 text-gray-900 font-light shadow-md hover:bg-yellow-600">
-          {buttonText}
+          <Link href="/products">{buttonText}</Link>
         </button>
       </div>
     </div>
