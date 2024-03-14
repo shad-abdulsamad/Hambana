@@ -1,22 +1,3 @@
-/* import React from "react";
-import Sidebar from "./components/Sidebar";
-import logo from "../public/logo.png";
-import Image from "next/image";
-import Link from "next/link";
-
-const Navbar = () => {
-  return (
-    <nav className="flex justify-around">
-      <Sidebar />
-      <Link href="/">
-        <Image src={logo} alt="Logo" width={120} height={120} />
-      </Link>
-    </nav>
-  );
-};
-
-export default Navbar;
- */
 "use client";
 import React, { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar";
