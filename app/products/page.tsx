@@ -11,7 +11,7 @@ const ProductsPage = () => {
         <div className="lg:col-span-1">
           <Categories />
         </div>
-        <div className="lg:col-span-1">
+        <div className="flex flex-wrap justify-center gap-4 lg:col-span-1">
           <ProductGrid />
         </div>
       </div>
