@@ -9,6 +9,7 @@ import ProductCard from "./components/ProductCard";
 import Link from "next/link";
 import Slider from "./components/Slider";
 import Features from "./components/Features";
+import Banner from "./components/Banner";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         slogan="We Produce The Best Olive Oil"
         buttonText="Products"
       />
+      <Banner />
       <section className="text-center mb-12 mt-5">
         <h2 className="text-2xl sm:text-3xl font-serif text-gray-800 mb-4">
           What We Do

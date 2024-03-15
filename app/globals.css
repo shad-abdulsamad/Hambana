@@ -65,11 +65,17 @@
        top: 0;
        background-color:#F9F7F2;
        z-index: 1000;
+       border-bottom: solid #CCCCCC 2px;
        box-shadow: 0 2px 2px -2px gray;
    } 
 
+   .transparent-navbar {
+       background-color:transparent;
+       z-index: 1000;
+   }
+
    .navbar{
-    height: 80px;
+    height: 70px;
    }
 
 }

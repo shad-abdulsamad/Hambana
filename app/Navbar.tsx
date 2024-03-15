@@ -23,12 +23,12 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar flex justify-around ${
-        isSticky ? "sticky-navbar" : ""
+        isSticky ? "sticky-navbar" : "transparent-navbar"
       }`}
     >
       <Sidebar />
       {isSticky ? null : (
-        <Link href="/" className="">
+        <Link href="/">
           <Image src={logo} alt="Logo" width={120} height={120} />
         </Link>
       )}

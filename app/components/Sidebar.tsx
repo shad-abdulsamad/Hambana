@@ -30,17 +30,17 @@ const Sidebar = () => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } w-80 h-full bg-gray-800 transition-transform duration-300 ease-in-out z-40`}
       >
-        <ul className="list-none p-6 m-7">
-          <li className="p-4 text-white hover:bg-gray-700">
+        <ul className="list-none p-6 m-7 font-light">
+          <li className="p-4 text-white hover:bg-yellow-400">
             <Link href="/">Home</Link>
           </li>
-          <li className="p-4 text-white hover:bg-gray-700">
+          <li className="p-4 text-white hover:bg-yellow-400">
             <Link href="/contact">Contact</Link>
           </li>
-          <li className="p-4 text-white hover:bg-gray-700">
+          <li className="p-4 text-white hover:bg-yellow-400">
             <Link href="/about">About Us</Link>
           </li>
-          <li className="p-4 text-white hover:bg-gray-700">
+          <li className="p-4 text-white hover:bg-yellow-400">
             <Link href="/products">Products</Link>
           </li>
         </ul>

@@ -22,7 +22,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex flex-col sm:flex-row justify-around p-5 bg-slate-gray text-gray-400 mt-3 ">
+    <footer className="flex flex-col sm:flex-row justify-around p-5 bg-slate-gray text-gray-400 mt-3 font-serif ">
       <div className="flex flex-col max-w-xs mb-4 sm:mb-0">
         <h3 className="text-yellow-400 font-semibold text-lg">About Us</h3>
         <p className="text-sm">
