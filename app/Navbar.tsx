@@ -21,13 +21,18 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`flex justify-around ${isSticky ? "sticky-navbar" : ""}`}>
+    <nav
+      className={`navbar flex justify-around ${
+        isSticky ? "sticky-navbar" : ""
+      }`}
+    >
       <Sidebar />
-      <Link href="/">
-        <Image src={logo} alt="Logo" width={120} height={120} />
-      </Link>
+      {isSticky ? null : (
+        <Link href="/" className="">
+          <Image src={logo} alt="Logo" width={120} height={120} />
+        </Link>
+      )}
     </nav>
   );
 };
-
 export default Navbar;
