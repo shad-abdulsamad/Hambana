@@ -1,33 +1,36 @@
-import React from "react";
-import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage";
-import WhatWeDoCard from "./components/WhatWeDoCard";
+import oliveBottle from "@/public/olive-bottle.jpg";
 import salts from "@/public/salt.png";
 import vinegar from "@/public/vinegar.png";
-import oliveOil from "@/public/virgin-oil.png";
-import oliveBottle from "@/public/olive-bottle.jpg";
-import ProductCard from "./components/ProductCard";
+import oliveOil from "@/public/olive-oil.jpg";
+import olive from "@/public/virgin-oil.png";
 import Link from "next/link";
-import Slider from "./components/Slider";
-import Features from "./components/Features";
 import Banner from "./components/Banner";
 import Carousel from "./components/Carousel";
+import Features from "./components/Features";
+import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage";
+import ProductCard from "./components/ProductCard";
+import WhatWeDoCard from "./components/WhatWeDoCard";
 
 export default function Home() {
   return (
     <>
       <LandingPageBackgroundImage
         imageUrl={oliveOil.src}
-        slogan="We Produce The Best Olive Oil"
+        header="We Produce"
+        slogan="The Best Olive Oil!"
         buttonText="Products"
       />
       <Banner />
-      <section className="text-center mb-12 mt-10">
+      <section
+        className="text-center mb-12 p-10"
+        style={{ backgroundColor: "#F9F7F2" }}
+      >
         <h2 className="text-2xl sm:text-3xl font-serif text-gray-800 mb-4">
           What We Do
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           <WhatWeDoCard
-            image={oliveOil.src}
+            image={olive.src}
             title="Extra Virgin Olive Oil"
             body="Olive oil is made simply by crushing olives and extracting the juice. It is the only cooking oil that is made without the use of chemicals."
           />
@@ -43,14 +46,17 @@ export default function Home() {
           />
         </div>
       </section>
-      <section>
-        <h2 className="text-2xl text-center sm:text-3xl font-serif text-gray-800 mb-4">
-          Our Range
-        </h2>
-        <Carousel />
-        <Features />
-      </section>
-      <section className="flex flex-col items-center">
+
+      <h2 className="text-2xl text-center sm:text-3xl font-serif text-gray-800 mb-4">
+        Our Range
+      </h2>
+      <Carousel />
+      <Features />
+
+      <section
+        className="flex flex-col items-center"
+        style={{ backgroundColor: "#F9F7F2" }}
+      >
         <h2 className="text-2xl text-center sm:text-3xl font-serif text-gray-800 mb-4 mt-5">
           Newest Products
         </h2>

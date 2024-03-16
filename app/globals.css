@@ -13,8 +13,17 @@
         width: 170px;
     }
 
+   
+    .dark-image-background{
+        background-color: #131212;
+    }
     .bg-slate-gray{
         background-color: #3D4348;
+    }
+
+    .bottom-line{
+        width: 10px;
+        border: solid 1px wheat;
     }
 
     .slate-gray{
@@ -77,13 +86,71 @@
     height: 70px;
    }
 
-   .slider-width{
-    width: 75%;
+   .transparent-navbar{
+    height: 0px;
    }
+.carousel-buttons {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
 
-   .promotional-text-width{
-        width: 25%;
-   }
+.carousel-buttons button {
+    background: #FACC15;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
 
-   
+.carousel-buttons button:hover {
+    background-color: lightgray;
+}
+
+.red {
+    position: relative;
+    width: 50%;
+    max-width: 600px;
+    margin-right: 0px;
+}
+
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.yellow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+    padding: 15px;
+    background-color: #FACC15;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .red,
+    .yellow {
+        width: 100%;
+        max-width: none;
+    }
+}
 }
