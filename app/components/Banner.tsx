@@ -39,7 +39,9 @@ const Banner = () => {
             {/* Placeholder for icon */}
             <span>{item.icon}</span>
           </div>
-          <h3 className="text-lg font-semibold font-serif">{item.title}</h3>
+          <h3 className="text-lg font-semibold font-serif slate-gray">
+            {item.title}
+          </h3>
           <p className="text-sm font-light">{item.description}</p>
         </div>
       ))}

@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar flex justify-around ${
-        isSticky ? "sticky-navbar" : "transparent-navbar"
+        isSticky ? "sticky-navbar" : "bg-transparent"
       }`}
     >
       <Sidebar />

@@ -25,6 +25,10 @@
         color: #959573;
     }
 
+    .dark-gray{
+        color: #586056;
+    }
+
     .no-resize{
         resize: none;
     }
@@ -69,13 +73,17 @@
        box-shadow: 0 2px 2px -2px gray;
    } 
 
-   .transparent-navbar {
-       background-color:transparent;
-       z-index: 1000;
-   }
-
    .navbar{
     height: 70px;
    }
 
+   .slider-width{
+    width: 75%;
+   }
+
+   .promotional-text-width{
+        width: 25%;
+   }
+
+   
 }
