@@ -10,6 +10,7 @@ import Features from "./components/Features";
 import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage";
 import ProductCard from "./components/ProductCard";
 import WhatWeDoCard from "./components/WhatWeDoCard";
+import StickySidebar from "./components/StickySidebar";
 
 export default function Home() {
   return (

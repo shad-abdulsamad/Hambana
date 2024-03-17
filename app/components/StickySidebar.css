@@ -1,0 +1,17 @@
+.sticky-sidebar-container {
+    position: fixed;
+    top: 250px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: block;
+    background-color:#FACC15;
+    padding: 15px;
+    margin-bottom: 5px;
+}
