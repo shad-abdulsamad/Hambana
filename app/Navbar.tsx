@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import logo from "../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -27,8 +28,9 @@ const Navbar = () => {
       }`}
     >
       <Sidebar />
+
       {isSticky ? null : (
-        <Link href="/">
+        <Link className="z-10 logo" href="/">
           <Image src={logo} alt="Logo" width={120} height={120} />
         </Link>
       )}

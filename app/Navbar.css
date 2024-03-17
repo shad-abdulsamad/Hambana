@@ -1,0 +1,22 @@
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: #F9F7F2;
+    z-index: 10;
+    border-bottom: solid #CCCCCC 2px;
+    box-shadow: 0 2px 2px -2px gray;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.transparent-navbar {
+    height: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .logo {
+        display: none;
+    }
+}

@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
+import icon from "@/public/icon-1.webp";
 import sliderItem1 from "@/public/slider-item-1.png";
 import sliderItem2 from "@/public/slider-item-2.png";
-import icon from "@/public/icon-1.webp";
-import { SlArrowRight, SlArrowLeft } from "react-icons/sl";
+import Image from "next/image";
+import { useState } from "react";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import "./Carousel.css";
 
 const Carousel = () => {
   const images = [sliderItem1, sliderItem2];

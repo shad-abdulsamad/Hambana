@@ -25,7 +25,12 @@ const StickySidebar = () => {
     <>
       <div className="sticky-sidebar-container">
         {socialMedias.map((social) => (
-          <a href={social.link} key={social.name} className="social-icon">
+          <a
+            href={social.link}
+            key={social.name}
+            className="social-icon"
+            target="_blank"
+          >
             {social.icon}
           </a>
         ))}
