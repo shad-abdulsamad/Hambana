@@ -11,6 +11,7 @@ import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage"
 import ProductCard from "./components/ProductCard";
 import WhatWeDoCard from "./components/WhatWeDoCard";
 import StickySidebar from "./components/StickySidebar";
+import ReturnToTopButton from "./components/ReturnToTopButton";
 
 export default function Home() {
   return (
@@ -87,6 +88,7 @@ export default function Home() {
           <Link href="/products">View All</Link>
         </button>
       </section>
+      <ReturnToTopButton />
     </>
   );
 }

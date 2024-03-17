@@ -1,0 +1,25 @@
+.return-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FACC15;
+    color: #3D4348;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.return-to-top-button.visible {
+    opacity: 1;
+}
+
+.return-to-top-button:hover {
+    background-color: #f0c414;
+}
