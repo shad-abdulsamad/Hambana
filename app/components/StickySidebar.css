@@ -15,3 +15,9 @@
     padding: 15px;
     margin-bottom: 5px;
 }
+
+.social-icon:hover{
+    transform: translate(-5px);
+    transition: transform 0.3s ease;
+}
+
