@@ -1,7 +1,7 @@
 import oliveBottle from "@/public/olive-bottle.jpg";
+import oliveOil from "@/public/olive-oil.jpg";
 import salts from "@/public/salt.png";
 import vinegar from "@/public/vinegar.png";
-import oliveOil from "@/public/olive-oil.jpg";
 import olive from "@/public/virgin-oil.png";
 import Link from "next/link";
 import Banner from "./components/Banner";
@@ -9,9 +9,8 @@ import Carousel from "./components/Carousel";
 import Features from "./components/Features";
 import LandingPageBackgroundImage from "./components/LandingPageBackgroundImage";
 import ProductCard from "./components/ProductCard";
-import WhatWeDoCard from "./components/WhatWeDoCard";
-import StickySidebar from "./components/StickySidebar";
 import ReturnToTopButton from "./components/ReturnToTopButton";
+import WhatWeDoCard from "./components/WhatWeDoCard";
 
 export default function Home() {
   return (

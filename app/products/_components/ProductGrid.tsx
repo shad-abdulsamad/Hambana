@@ -1,11 +1,11 @@
 "use client";
-import React, { useState } from "react";
 import ProductCard from "@/app/components/ProductCard";
-import useProducts from "../useProducts";
+import { useState } from "react";
 import {
   LiaLongArrowAltLeftSolid,
   LiaLongArrowAltRightSolid,
 } from "react-icons/lia";
+import useProducts from "../useProducts";
 
 const ProductGrid = () => {
   const products = useProducts();
@@ -46,7 +46,7 @@ const ProductGrid = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-4 space-x-6 slate-gray text-xs">
+      <div className="flex justify-center mt-4 space-x-1 slate-gray text-xs">
         {currentPage !== 1 && (
           <span
             className="pagination-item cursor-pointer hover:bg-yellow-400 rounded-full"

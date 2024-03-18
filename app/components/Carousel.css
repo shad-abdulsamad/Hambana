@@ -1,7 +1,6 @@
 .carousel-buttons {
     display: flex;
     flex-direction: column;
-    z-index: 10;
 }
 
 .carousel-buttons button {

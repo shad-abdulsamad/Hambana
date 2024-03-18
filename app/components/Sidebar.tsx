@@ -32,16 +32,24 @@ const Sidebar = () => {
       >
         <ul className="list-none p-6 m-7 font-light">
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link href="/">Home</Link>
+            <Link onClick={toggleSidebar} href="/">
+              Home
+            </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link href="/contact">Contact</Link>
+            <Link onClick={toggleSidebar} href="/contact">
+              Contact
+            </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link href="/about">About Us</Link>
+            <Link onClick={toggleSidebar} href="/about">
+              About Us
+            </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link href="/products">Products</Link>
+            <Link onClick={toggleSidebar} href="/products">
+              Products
+            </Link>
           </li>
         </ul>
       </div>

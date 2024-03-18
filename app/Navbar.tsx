@@ -36,5 +36,19 @@ const Navbar = () => {
       )}
     </nav>
   );
+
+  /*   return (
+    <nav
+      className={`navbar flex justify-around ${
+        isSticky ? "sticky-navbar" : "transparent-navbar"
+      }`}
+    >
+      <Sidebar />
+
+      <Link className={`z-10 logo ${isSticky ? "show-logo" : ""}`} href="/">
+        <Image src={logo} alt="Logo" width={120} height={120} />
+      </Link>
+    </nav>
+  ); */
 };
 export default Navbar;
