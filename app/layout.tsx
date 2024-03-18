@@ -23,8 +23,8 @@ export default function RootLayout({
         <Navbar />
         <StickySidebar />
         <main>{children}</main>
+        <Footer />
       </body>
-      <Footer />
     </html>
   );
 }
