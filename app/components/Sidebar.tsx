@@ -37,8 +37,8 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link onClick={toggleSidebar} href="/contact">
-              Contact
+            <Link onClick={toggleSidebar} href="/products">
+              Products
             </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
@@ -47,8 +47,8 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="p-4 text-white hover:bg-yellow-400">
-            <Link onClick={toggleSidebar} href="/products">
-              Products
+            <Link onClick={toggleSidebar} href="/contact">
+              Contact
             </Link>
           </li>
         </ul>
