@@ -21,7 +21,7 @@ const Navbar = () => {
     };
   }, []);
 
-  return (
+  /*   return (
     <nav
       className={`navbar flex justify-around ${
         isSticky ? "sticky-navbar" : "transparent-navbar"
@@ -35,9 +35,9 @@ const Navbar = () => {
         </Link>
       )}
     </nav>
-  );
+  ); */
 
-  /*   return (
+  return (
     <nav
       className={`navbar flex justify-around ${
         isSticky ? "sticky-navbar" : "transparent-navbar"
@@ -46,9 +46,9 @@ const Navbar = () => {
       <Sidebar />
 
       <Link className={`z-10 logo ${isSticky ? "show-logo" : ""}`} href="/">
-        <Image src={logo} alt="Logo" width={120} height={120} />
+        <Image src={logo} alt="Logo" width={105} height={105} />
       </Link>
     </nav>
-  ); */
+  );
 };
 export default Navbar;

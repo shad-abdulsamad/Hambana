@@ -36,16 +36,16 @@ const Footer = () => {
       </div>
       <div className="flex flex-col mb-4 sm:mb-0">
         <h3 className="text-yellow-400 font-semibold text-lg">Information</h3>
-        <Link href="/" className="text-sm hover:text-yellow-400">
+        <Link href="/" className="text-sm mb-1 hover:text-yellow-400">
           Home
         </Link>
-        <Link href="/products" className="text-sm hover:text-yellow-400">
+        <Link href="/products" className="text-sm mb-1 hover:text-yellow-400">
           Products
         </Link>
-        <Link href="/about" className="text-sm hover:text-yellow-400">
+        <Link href="/about" className="text-sm mb-1 hover:text-yellow-400">
           About
         </Link>
-        <Link href="/contact" className="text-sm hover:text-yellow-400">
+        <Link href="/contact" className="text-sm mb-1 hover:text-yellow-400">
           Contact
         </Link>
       </div>
